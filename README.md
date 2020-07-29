@@ -8,7 +8,6 @@
     
     # Create the directory that will house our minecraft instances
     sudo su --shell /bin/bash minecraft
-    mkdir instances
     exit
     
     # Copy the minecraft@.service file into the correct place.
@@ -22,11 +21,9 @@
     # Sudo into the minecraft user's shell
     sudo su --shell /bin/bash minecraft
     
-    # Move into the instances directory
-    cd instances
-    
     # Create a new folder to house your instance
-    mkdir server1
+    cd /opt/minecraft
+    mkdir worldName
     
     # Install your minecraft instance, and make sure there is a minecraft_server.jar file.
     # If you use Forge servers, you can use the following:
